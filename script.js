@@ -72,7 +72,7 @@ for(let mathTypeIndex = 0; mathTypeIndex < 5; mathTypeIndex++) {
         }
 
         const mathResult = doTheMath(num1, num2, mathTypeIndex);
-        const result = [num1, num2, mathResult, mathTypeIndex, i];
+        const result = [num1, num2, mathResult, mathTypeIndex, i + 1];
 
         results.push(result);
     }
