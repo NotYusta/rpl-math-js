@@ -72,12 +72,12 @@ for(let mathTypeIndex = 0; mathTypeIndex < 5; mathTypeIndex++) {
         }
 
         const mathResult = doTheMath(num1, num2, mathTypeIndex);
-        const result = [num1, num2, mathResult, mathTypeIndex];
+        const result = [num1, num2, mathResult, mathTypeIndex, i];
 
         results.push(result);
     }
 }
 
 results.forEach((result) => {
-    printOut("#" + result[3] + " - " + getMathType(result[3])  + " - Value 1: " + result[0] + " - Value 2: " + result[1] + " - Result: " + result[2]);
+    printOut("#" + result[4] + " - " + getMathType(result[3])  + " - Value 1: " + result[0] + " - Value 2: " + result[1] + " - Result: " + result[2]);
 });
